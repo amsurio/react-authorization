@@ -1,0 +1,48 @@
+// Import styling base.
+@import './../../assets/styles/base.scss';
+
+header {
+  padding: 5px 0px;
+  content: '';
+  clear: both;
+  display: table;
+  width: 100%;
+  background-color: white;
+  border-bottom: 2px solid black;
+  .wrapper {
+    width: 100%;
+  }
+}
+
+nav{
+  float: left;
+  margin: 18px 0px;
+  font-family: 'Roboto', sans-serif;
+  a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: black;
+    transition: .25s color;
+    &.active {
+      font-weight: 600;
+    }
+  }
+}
+
+.user-information-wrapper {
+  position: relative;
+  float: right;
+  i {
+    cursor: pointer;
+    color: black;
+    margin: 15px 0px;
+    font-size: 24px;
+    transition: .25s color;
+    &:hover{
+      color: $blue;
+    }
+    &.active {
+      color: $blue;
+    }
+  }
+}
